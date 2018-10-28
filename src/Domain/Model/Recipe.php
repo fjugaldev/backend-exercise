@@ -29,6 +29,7 @@ class Recipe
     }
 
     /**
+     * Gets recipe title.
      * @return string
      */
     public function getTitle(): string
@@ -37,6 +38,7 @@ class Recipe
     }
 
     /**
+     * Sets recipe title.
      * @param string $title
      *
      * @return self
@@ -49,6 +51,7 @@ class Recipe
     }
 
     /**
+     * Gets recipe href
      * @return string
      */
     public function getHref(): string
@@ -57,6 +60,7 @@ class Recipe
     }
 
     /**
+     * Sets recipe href
      * @param string $href
      *
      * @return self
@@ -69,6 +73,7 @@ class Recipe
     }
 
     /**
+     * Gets recipe ingredients.
      * @return array
      */
     public function getIngredients(): array
@@ -77,6 +82,7 @@ class Recipe
     }
 
     /**
+     * Sets recipe ingredients.
      * @param string $ingredients
      *
      * @return self
@@ -89,6 +95,7 @@ class Recipe
     }
 
     /**
+     * Gets recipe thumbnail
      * @return string
      */
     public function getThumbnail(): string
@@ -97,6 +104,7 @@ class Recipe
     }
 
     /**
+     * Sets recipe thumbnail
      * @param string $thumbnail
      *
      * @return self
@@ -111,7 +119,7 @@ class Recipe
     /**
      * @return array
      */
-    public function toJson(): array
+    public function __toJson(): array
     {
         return get_object_vars($this);
     }

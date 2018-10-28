@@ -6,6 +6,7 @@
         "php": "^7.0.8",
         "guzzlehttp/guzzle": "^6.3",
         "sensio/framework-extra-bundle": "^5.0",
+        "symfony/browser-kit": "^4.1",
         "symfony/console": "^4.0",
         "symfony/flex": "^1.0",
         "symfony/framework-bundle": "^4.0",
@@ -14,7 +15,8 @@
         "symfony/yaml": "^4.0"
     },
     "require-dev": {
-        "symfony/dotenv": "^4.0"
+        "symfony/dotenv": "^4.0",
+        "symfony/phpunit-bridge": "^4.1"
     },
     "config": {
         "preferred-install": {
